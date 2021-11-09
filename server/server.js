@@ -31,11 +31,11 @@ app.post('/', async (req, res) => {
 app.patch('/:id', async (req, res) => {
     console.log('Patching from /')
     let id = parseInt(req.params.id)
-    const newText = req.body;
+    const text = req.body.text;
     knex('greetings')
         .returning('*')
-        .update({ text: newText })
         .where({ id })
+        .update({ text })
         .then(result => res.json(result))
 })
 
