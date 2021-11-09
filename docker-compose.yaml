@@ -17,6 +17,8 @@ services:
   server:
     build: ./server
     container_name: server
+    volumes:
+      - ./server:/app
     ports:
       - "3001:3001"
     networks:
@@ -29,6 +31,8 @@ services:
   frontend:
     build: ./front-end
     container_name: frontend
+    volumes:
+      - ./front-end:/app
     ports:
       - "3000:3000"
     networks:
