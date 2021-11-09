@@ -18,7 +18,7 @@ services:
     build: ./server
     container_name: server
     ports:
-      - "3001:3000"
+      - "3001:3001"
     networks:
       - checkpoint
     environment:

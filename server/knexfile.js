@@ -6,6 +6,7 @@ module.exports = {
     development: {
         client: 'pg',
         connection: connection
+        //connection: 'postgres://postgres:bacon@localhost:5432/postgres'
     },
 
     staging: {
