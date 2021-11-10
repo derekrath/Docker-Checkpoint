@@ -1,3 +1,4 @@
+//remove npx knex migrate:rollback from start for production, since we dont want to wipe our database outside of development
 {
   "name": "server",
   "version": "1.0.0",
